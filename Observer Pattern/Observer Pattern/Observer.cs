@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Observer_Pattern
 {
-    class Program
+    interface Observer
     {
-        static void Main(string[] args)
-        {
-        }
+        void update(float temp, float humidity, float pressure);
     }
 }
