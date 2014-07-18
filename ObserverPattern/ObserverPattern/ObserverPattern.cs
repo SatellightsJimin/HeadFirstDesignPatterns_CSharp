@@ -89,7 +89,7 @@ namespace ObserverPattern
     }
 
 
-    class Program
+    class ObserverPattern
     {
         static void Main(string[] args)
         {
