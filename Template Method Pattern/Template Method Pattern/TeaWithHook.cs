@@ -20,7 +20,7 @@ namespace Template_Method_Pattern
         public bool customerWantsCondiments()
         {
 
-            String answer = getUserInput();
+            string answer = getUserInput();
 
             if (answer.ToLower().StartsWith("y"))
             {
@@ -32,9 +32,9 @@ namespace Template_Method_Pattern
             }
         }
 
-        private String getUserInput() {
+        private string getUserInput() {
 		// get the user's response
-		String answer = null;
+		string answer = null;
 
 		Console.Write("Would you like lemon with your tea (y/n)? ");
 
