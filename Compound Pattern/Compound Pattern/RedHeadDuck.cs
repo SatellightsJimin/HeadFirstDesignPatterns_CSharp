@@ -8,9 +8,28 @@ namespace Compound_Pattern
 {
     class RedHeadDuck : Quackable
     {
+        Observable observable;
+
         public void quack()
         {
             Console.WriteLine("꽥꽥");
+            notifyObservers();
+        }
+        public RedHeadDuck()
+        {
+            observable = new Observable(this);
+        }
+
+       
+
+        public void registerObserver(Observer observer)
+        {
+            observable.registerObserver(observer);
+        }
+
+        public void notifyObservers()
+        {
+            observable.notifyObservers();
         }
     }
 }

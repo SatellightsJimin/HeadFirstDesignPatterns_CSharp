@@ -12,5 +12,7 @@ namespace Compound_Pattern
         {
             Console.WriteLine("궉궉");
         }
+
+
     }
 }

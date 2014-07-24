@@ -8,9 +8,27 @@ namespace Compound_Pattern
 {
     class DuckCall : Quackable
     {
+        Observable observable;
         public void quack()
         {
             Console.WriteLine("꽉꽉");
+            notifyObservers();
+        }
+        public DuckCall()
+        {
+            observable = new Observable(this);
+        }
+
+       
+
+        public void registerObserver(Observer observer)
+        {
+            observable.registerObserver(observer);
+        }
+
+        public void notifyObservers()
+        {
+            observable.notifyObservers();
         }
     }
 }

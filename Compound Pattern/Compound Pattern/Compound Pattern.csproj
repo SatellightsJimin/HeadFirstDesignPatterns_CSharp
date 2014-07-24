@@ -50,9 +50,13 @@
     <Compile Include="GooseAdapter.cs" />
     <Compile Include="MallardDuck.cs" />
     <Compile Include="DuckSimulator.cs" />
+    <Compile Include="Observable.cs" />
+    <Compile Include="Observer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quackable.cs" />
     <Compile Include="QuackCounter.cs" />
+    <Compile Include="QuackObservable.cs" />
+    <Compile Include="Quackologist.cs" />
     <Compile Include="RedHeadDuck.cs" />
     <Compile Include="RubberDuck.cs" />
   </ItemGroup>

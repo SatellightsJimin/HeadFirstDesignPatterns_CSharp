@@ -9,10 +9,16 @@ namespace Compound_Pattern
 {
     class Flock : Quackable
     {
+        Observable observable;
         ArrayList quackers = new ArrayList();
         public void add(Quackable quacker)
         {
             quackers.Add(quacker);
+        }
+
+        public Flock()
+        {
+            observable = new Observable(this);
         }
 
         public void quack()
@@ -21,6 +27,16 @@ namespace Compound_Pattern
             {
                 quacker.quack();
             }
+        }
+
+        public void registerObserver(Observer observer)
+        {
+            observable.registerObserver(observer);
+        }
+
+        public void notifyObservers()
+        {
+            observable.notifyObservers();
         }
     }
 }

@@ -55,6 +55,9 @@ namespace Compound_Pattern
 
             flockOfDucks.add(flockOfMallards);
 
+            Quackologist quackologist = new Quackologist();
+            flockOfDucks.registerObserver(quackologist);
+
             Console.WriteLine();
             Console.WriteLine("Duck 시뮬레이터 : 전체 무리 시뮬레이팅");
             simulate(flockOfDucks);

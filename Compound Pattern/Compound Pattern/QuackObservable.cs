@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Compound_Pattern
 {
-    interface QuackObservable
+    public interface QuackObservable
     {
+        void registerObserver(Observer observer);
+        void notifyObservers();
     }
 }
